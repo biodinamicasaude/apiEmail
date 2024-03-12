@@ -16,10 +16,9 @@ router.post('/contato', (req, res)=>{
 
     let mensagem ={
         from:'benolopesdias@gmail.com' ,
-        to: req.body.from,
+        to: req.body.to,
         subject: req.body.subject,
-        html: req.body.email,
-        text: req.body.email     
+        text: req.body.text     
     }
      transport.sendMail(mensagem, function (erro){
         if(erro) return res.status(400).send({Erro: 'Erro ao enviar o email'})
