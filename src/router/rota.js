@@ -71,14 +71,14 @@ router.post('/contato', (req, res) => {
         port: 465, // Porta SSL para o Gmail
         secure: true, // true para usar SSL
         auth: {
-            user: "ryanpizani@gmail.com", // Substitua pelo seu endereço de e-mail do Gmail
-            pass: "tbtm nosk ilmh fdic" // Substitua pela sua senha do Gmail
+            user: "clinica@biodinamicasaude.com.br", // Substitua pelo seu endereço de e-mail do Gmail
+            pass: "pjor qvus kznj awym" // Substitua pela sua senha do Gmail
         }
     });
 
     let mensagem = {
         from: 'clinica@biodinamicasaude.com.br',
-        to: req.body.to,
+        to: 'clinica@biodinamicasaude.com.br',
         subject: req.body.subject,
         text: req.body.text
     };
